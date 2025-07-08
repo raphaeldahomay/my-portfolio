@@ -1,4 +1,7 @@
+import { useRouter } from 'next/router'
+
 export default function Projects() {
+    const { basePath } = useRouter()
     return (
     <section id="projects" className="bg-white lg:w-[1000px] shadow-[0_0_10px_rgba(0,0,3,0.2)] rounded-2xl py-5 px-4 bg-gray-0 dark:bg-gray-900">
     <div className="max-w-6xl mx-auto">
@@ -41,7 +44,7 @@ export default function Projects() {
             className="block p-4 rounded-2xl shadow-md bg-white dark:bg-gray-800 hover:shadow-xl transition-all border border-gray-200 dark:border-gray-700"
           >
             <img
-              src={project.image}
+              src={`${basePath}${project.image}`}
               alt={`${project.title} preview`}
               className="w-full h-36 object-cover rounded-md mb-3"
             />
@@ -91,7 +94,7 @@ export default function Projects() {
             className="block p-4 rounded-2xl shadow-md bg-white dark:bg-gray-800 hover:shadow-xl transition-all border border-gray-200 dark:border-gray-700"
           >
             <img
-              src={project.image}
+              src={`${basePath}${project.image}`}
               alt={`${project.title} preview`}
               className="w-full h-36 object-cover rounded-md mb-3"
             />

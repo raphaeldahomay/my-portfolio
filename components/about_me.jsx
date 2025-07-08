@@ -1,4 +1,7 @@
+import { useRouter } from 'next/router'
+
 export default function AboutMeSection() {
+    const { basePath } = useRouter()
     return (
       <section
         id="about"
@@ -10,7 +13,7 @@ export default function AboutMeSection() {
           <div className="bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,3,0.2)] rounded-2xl p-6 flex-1">
             <h2 className="text-3xl font-bold mb-4">About Me</h2>
             <img
-              src="/profile_picture.jpg"
+              src={`${basePath}/profile_picture.jpg`}
               alt="Raphael Dahomay"
               className="w-40 h-40 rounded-lg object-cover mb-4 float-right ml-[8px]"
             />
@@ -52,12 +55,10 @@ export default function AboutMeSection() {
                 ["Next.js", "/next.svg"],
                 ["CSS", "/css.svg"],
               ].map(([name, src]) => (
-                <a href="#" target="_blank" rel="noopener noreferrer" className="transition-transform duration-300 hover:scale-110">
                 <div key={name} className="flex flex-col items-center">
-                  <img src={src} alt={name} className="w-18 h-18" />
+                  <img src={`${basePath}${src}`} alt={name} className="w-18 h-18 transition-transform duration-300 hover:scale-120" />
                   <span className="text-sm mt-2">{name}</span>
                 </div>
-                </a>
               ))}
             </div>
   
@@ -72,12 +73,10 @@ export default function AboutMeSection() {
                 ["Streamlit", "/streamlit.svg"],
                 ["SQL", "/sql.svg"],
               ].map(([name, src]) => (
-                <a href="#" target="_blank" rel="noopener noreferrer" className="transition-transform duration-300 hover:scale-110">
                 <div key={name} className="flex flex-col items-center">
-                  <img src={src} alt={name} className="w-18 h-18" />
+                  <img src={`${basePath}${src}`} alt={name} className="w-18 h-18 transition-transform duration-300 hover:scale-120" />
                   <span className="text-sm mt-2">{name}</span>
                 </div>
-                </a>
               ))}
             </div>
           </div>

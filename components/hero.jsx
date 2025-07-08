@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { useRouter } from 'next/router'
 
 export default function Hero() {
+    const { basePath } = useRouter()
     return (
         <section className="shadow-[0_0_10px_rgba(0,0,3,0.2)] rounded-2xl lg:w-[1000px] m-0 flex flex-col justify-center px-15 py-10 bg-white dark:bg-gray-900">
           {/* Center Top */}
@@ -19,7 +21,7 @@ export default function Hero() {
               </p>
               {/* Mini Character #1 */}
               <img
-                src="/programmer.svg" // <- Replace with your actual image path
+                src={`${basePath}/programmer.svg`} // <- Replace with your actual image path
                 alt="Mini character coding"
                 className= "text-black w-[100px] h-[100px] transform hover:scale-110 transition-transform duration-300"
                 fill= "currentColor"
@@ -33,7 +35,7 @@ export default function Hero() {
               </p>
               {/* Mini Character #2 */}
               <img
-                src="/data.svg" // <- Replace with your second character image
+                src={`${basePath}/data.svg`} // <- Replace with your second character image
                 alt="Mini character thinking"
                 className= "text-black w-[100px] h-[100px] transform hover:scale-110 transition-transform duration-300"
                 fill= "currentColor"
@@ -42,7 +44,7 @@ export default function Hero() {
           </div>
     
           {/* Scroll Down Indicator */}
-          <a href="/#about" className="mt-5 flex justify-center">
+          <a href="#about" className="mt-5 flex justify-center">
           <div className="hover:text-black flex justify-center sm:mt-10 animate-bounce text-gray-400 dark:text-gray-500 text-3xl">
             ↓
           </div>
