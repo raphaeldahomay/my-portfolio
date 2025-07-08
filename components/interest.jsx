@@ -47,14 +47,17 @@ export default function Interest() {
               <p className="text-gray-700 dark:text-gray-300">
                 Read one of my recent papers where I dive into a financial valuation case.
               </p>
+              <div className="flex">
               <a
                 href="https://riddlecapitalresearch.com/team-login/team-dashboard/pdf/2.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-2 px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+                className="inline-block group transition relative"
               >
-                View Research Sample →
+                <span className="relative z-10 text-[1.1rem]">View Reseaech Paper →</span>
+                <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
               </a>
+              </div>
             </div>
           </div>
   

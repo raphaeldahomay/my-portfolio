@@ -25,13 +25,16 @@ export default function AboutMeSection() {
               my passion for computer science has helped me progress quickly. 
               I believe in deep, consistent practice—and that’s what I’ve committed to ever since.
             </p>
+            <div className="flex justify-end">
             <a
-              href="/Raphael_Dahomay_CV.pdf"
-              download
-              className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition"
+            href="/Raphael_Dahomay_CV.pdf"
+            download
+            className="inline-block relative group transition"
             >
-              Download CV
+                <span className="relative z-10 text-[1.1rem]">Download CV →</span>
+                <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
             </a>
+            </div>
           </div>
   
           {/* RIGHT BOX — Tech Stack */}

@@ -22,9 +22,18 @@ export default function Navbar() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex gap-6">
-            <Link href="/#about" className="logo-text text-[1.2rem] nav-link scroll={True} hover:underline">About Me</Link>
-            <Link href="/#projects" className="logo-text text-[1.2rem] nav-link scroll={True} hover:underline">Projects</Link>
-            <Link href="/#interest" className="logo-text text-[1.2rem] nav-link scroll={True} hover:underline">Side Interests</Link>
+            <Link href="/#about" className="relative group text-[1.2rem] logo-text nav-link">
+                <span className="relative z-10">About Me</span>
+                <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
+            </Link>
+            <Link href="/#projects" className="relative group text-[1.2rem] logo-text nav-link">
+                <span className="relative z-10">Projects</span>
+                <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
+            </Link>
+            <Link href="/#interest" className="relative group text-[1.2rem] logo-text nav-link">
+                <span className="relative z-10">Side Interests</span>
+                <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
+            </Link>
             </div>
 
             {/* Mobile Menu Button */}

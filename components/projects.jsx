@@ -30,7 +30,7 @@ export default function Projects() {
             title: "CineClues",
             desc: "Web game where users guess movie titles from riddles. Built with HTML/CSS/JS + TMDB API.",
             link: "https://raphaeldahomay.github.io/rebus-quizz-app/",
-            image: "/rebus.png",
+            image: "/cineclues.png",
           }
         ].map((project, index) => (
           <a
@@ -107,8 +107,11 @@ export default function Projects() {
     </div>
   </div>
   {/* Extra GitHub link */}
-  <div className="mt-12 text-center">
-    <a href="https://github.com/raphaeldahomay?tab=repositories" className="hover:underline">See more ›</a>
+  <div className="flex mt-12 justify-center">
+    <a href="https://github.com/raphaeldahomay?tab=repositories" className="inline-block relative group transition">
+        <span className="relative z-10 text-[1.1rem]">See more →</span>
+        <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
+    </a>
   </div>
 </section>
 
