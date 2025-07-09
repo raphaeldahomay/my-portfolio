@@ -5,12 +5,12 @@ export default function AboutMeSection() {
     return (
       <section
         id="about"
-        className="dark:bg-gray-900 lg:px-0 lg:w-[1000px]"
+        className="dark:bg-gray-900 lg:px-0 lg:w-[900px] md:w-[900px]"
       >
         <div className="mx-auto flex flex-col lg:flex-row gap-5">
   
           {/* LEFT BOX — About Me */}
-          <div className="bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,3,0.2)] rounded-2xl p-6 flex-1">
+          <div className="bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,3,0.2)] rounded p-6 flex-1">
             <h2 className="text-3xl font-bold mb-4">About Me</h2>
             <img
               src={`${basePath}/profile_picture.jpg`}
@@ -34,14 +34,14 @@ export default function AboutMeSection() {
             download
             className="inline-block relative group transition"
             >
-                <span className="relative z-10 text-[1.1rem]">Download CV →</span>
-                <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
+                <span className="relative z-10 text-[1.1rem] text-[#2B7AB9]">Download CV →</span>
+                <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#2B7AB9] transition-all duration-500 group-hover:w-full"></span>
             </a>
             </div>
           </div>
   
           {/* RIGHT BOX — Tech Stack */}
-          <div className="bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,3,0.2)] rounded-2xl p-6 flex-1">
+          <div className="bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,3,0.2)] rounded p-6 flex-1">
             <h2 className="text-3xl font-bold mb-4">My Tech Stack</h2>
   
             {/* Frontend */}

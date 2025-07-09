@@ -4,11 +4,11 @@ import { useRouter } from 'next/router'
 export default function Hero() {
     const { basePath } = useRouter()
     return (
-        <section className="shadow-[0_0_10px_rgba(0,0,3,0.2)] rounded-2xl lg:w-[1000px] m-0 flex flex-col justify-center px-15 py-10 bg-white dark:bg-gray-900">
+        <section className="shadow-[0_0_10px_rgba(0,0,3,0.2)] rounded lg:w-[900px] md:w-[900px] m-0 flex flex-col justify-center px-15 py-10 bg-white dark:bg-gray-900">
           {/* Center Top */}
           <div className="mb-0 flex justify-center mt-1">
             <h1 className="text-4xl sm:text-4xl font-bold text-gray-900 dark:text-white text-center">
-              Hi, I'm Raphael Dahomay
+              Hi, I'm <span className="text-[#2B7AB9]">Raphael Dahomay</span>
             </h1>
           </div>
     
@@ -44,8 +44,8 @@ export default function Hero() {
           </div>
     
           {/* Scroll Down Indicator */}
-          <a href="#about" className="mt-5 flex justify-center">
-          <div className="hover:text-black flex justify-center sm:mt-10 animate-bounce text-gray-400 dark:text-gray-500 text-3xl">
+          <a href="#projects" className="mt-0 flex justify-center">
+          <div className="hover:text-[#2B7AB9] flex justify-center sm:mt-10 animate-bounce text-gray-400 dark:text-gray-500 text-3xl">
             ↓
           </div>
           </a>

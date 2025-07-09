@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 export default function Projects() {
     const { basePath } = useRouter()
     return (
-    <section id="projects" className="bg-white lg:w-[1000px] shadow-[0_0_10px_rgba(0,0,3,0.2)] rounded-2xl py-5 px-4 bg-gray-0 dark:bg-gray-900">
+    <section id="projects" className="bg-white lg:w-[900px] md:w-[900px] shadow-[0_0_10px_rgba(0,0,3,0.2)] rounded py-5 px-4 bg-gray-0 dark:bg-gray-900">
     <div className="max-w-6xl mx-auto">
     <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12">
       My Projects
@@ -12,28 +12,31 @@ export default function Projects() {
     {/* 🛠️ In Development */}
     <div className="mb-12">
       <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-6">
-        🛠️ In Development
+        -- In Development --
       </h3>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {[
           {
             title: "Equilance",
             desc: "A customizable multi-asset tracker built for users who want deeper insights into their portfolio performance, \
-            allocation, and historical returns.",
+            and more.",
             link: "#",
             image: "/in_development.png",
+            tools: "(Brainstorming phase)",
           },
           {
             title: "PuppyLife",
             desc: "A dog simulator web game built with Flask and JavaScript, featuring animated breeds and naming interactions.",
             link: "#",
             image: "/puppylife.png",
+            tools: "Python, Flask, JavaScript, HTML, CSS",
           },
           {
             title: "CineClues",
             desc: "Web game where users guess movie titles from riddles. Built with HTML/CSS/JS + TMDB API.",
             link: "https://raphaeldahomay.github.io/rebus-quizz-app/",
             image: "/cineclues.png",
+            tools: "HTML, CSS, Javascript",
           }
         ].map((project, index) => (
           <a
@@ -53,7 +56,10 @@ export default function Projects() {
             </h4>
             <p className="text-gray-600 dark:text-gray-300 text-sm">
               {project.desc}
-            </p>
+            </p> <br />
+            <div className='flex flex-col'>
+              <p className='font-bold'>Tools:<span className='text-[#2B7AB9]'> {project.tools}</span></p>
+            </div>
           </a>
         ))}
       </div>
@@ -62,7 +68,7 @@ export default function Projects() {
     {/* ✅ Completed & Maintained */}
     <div>
       <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-6">
-        ✅ Completed & Maintained
+        -- Completed & Maintained --
       </h3>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {[
@@ -71,12 +77,14 @@ export default function Projects() {
             desc: "Scrapes and processes SEC filings to extract the main financial tables and run valuation models.",
             link: "https://github.com/raphaeldahomay/10k-retriever",
             image: "/tenk_retriever.png",
+            tools: "Python, Streamlit, SEC API",
           },
           {
             title: "Geostock",
             desc: "Retrieves stock data and calculates key financial metrics like CAGR, beta, Sharpe ratio, and VaR.",
             link: "https://github.com/raphaeldahomay/stock-metrics-analyzer",
             image: "/stock_metrics.png",
+            tools: "Python, Streamlit, Yahoo Finance API",
           },
           {
             title: "CGÉD",
@@ -84,6 +92,7 @@ export default function Projects() {
             statements, and democratic initiatives for Guadeloupe.",
             link: "https://www.collectif-ged.fr/",
             image: "/cged.jpg",
+            tools: "HTML, CSS, SQL, Django"
           },
         ].map((project, index) => (
           <a
@@ -103,7 +112,10 @@ export default function Projects() {
             </h4>
             <p className="text-gray-600 dark:text-gray-300 text-sm">
               {project.desc}
-            </p>
+            </p><br />
+            <div className='flex flex-col'>
+              <p className='font-bold'>Tools:<span className='text-[#2B7AB9]'> {project.tools}</span></p>
+            </div>
           </a>
         ))}
       </div>
@@ -112,8 +124,8 @@ export default function Projects() {
   {/* Extra GitHub link */}
   <div className="flex mt-12 justify-center">
     <a href="https://github.com/raphaeldahomay?tab=repositories" className="inline-block relative group transition">
-        <span className="relative z-10 text-[1.1rem]">See more →</span>
-        <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
+        <span className="relative z-10 text-[1.1rem] text-[#2B7AB9]">See more →</span>
+        <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#2B7AB9] transition-all duration-500 group-hover:w-full"></span>
     </a>
   </div>
 </section>

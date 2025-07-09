@@ -2,7 +2,7 @@
 
 export default function Footer() {
     return (
-      <footer className="bg-white md:w-full mb-4 lg:w-[1000px] shadow-[0_0_10px_rgba(0,0,3,0.2)] rounded-2xl bg-gray-0 dark:bg-gray-900 text-gray-700 dark:text-gray-300 py-6 text-center">
+      <footer className="bg-white mb-4 lg:w-[900px] md:w-[900px] shadow-[0_0_10px_rgba(0,0,3,0.2)] rounded bg-gray-0 dark:bg-gray-900 text-gray-700 dark:text-gray-300 py-6 text-center">
         <div className="flex justify-center gap-9 mb-3">
           {/* GitHub */}
           <a

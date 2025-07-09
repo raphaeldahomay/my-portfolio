@@ -15,8 +15,8 @@ export default function Home() {
     <div className={`${geistSans.className} ${geistMono.className} min-h-screen flex flex-col items-center gap-8`}>
       <Navbar />
       <Hero />
-      <AboutMeSection />
       <Projects />
+      <AboutMeSection />
       <Interest />
       <Footer />
     </div>
