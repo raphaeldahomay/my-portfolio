@@ -2,7 +2,7 @@ This is my first portfolio created using [Next.js](https://nextjs.org) and boots
 
 ## Access
 
-Visit my website using this [link]()
+Visit my website using this [link](https://raphaeldahomay.github.io/my-portfolio/#projects)
 
 Or by cloning the repo:
 
