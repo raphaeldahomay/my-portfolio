@@ -9,64 +9,8 @@ export default function Projects() {
       My Projects
     </h2>
 
-    {/* 🛠️ In Development */}
-    <div className="mb-12">
-      <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-6">
-        -- In Development --
-      </h3>
-      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {[
-          {
-            title: "Equilance",
-            desc: "A customizable multi-asset tracker built for users who want deeper insights into their portfolio performance, \
-            and more.",
-            link: "#",
-            image: "/in_development.png",
-            tools: "(Brainstorming phase)",
-          },
-          {
-            title: "PuppyLife",
-            desc: "A dog simulator web game built with Flask and JavaScript, featuring animated breeds and naming interactions.",
-            link: "#",
-            image: "/puppylife.png",
-            tools: "Python, Flask, JavaScript, HTML, CSS",
-          },
-          {
-            title: "CineClues",
-            desc: "Web game where users guess movie titles from riddles. Built with HTML/CSS/JS + TMDB API.",
-            link: "https://raphaeldahomay.github.io/rebus-quizz-app/",
-            image: "/cineclues.png",
-            tools: "HTML, CSS, Javascript",
-          }
-        ].map((project, index) => (
-          <a
-            key={index}
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block p-4 rounded-2xl shadow-md bg-white dark:bg-gray-800 hover:shadow-xl transition-all border border-gray-200 dark:border-gray-700"
-          >
-            <img
-              src={`${basePath}${project.image}`}
-              alt={`${project.title} preview`}
-              className="w-full h-36 object-cover rounded-md mb-3"
-            />
-            <h4 className="text-xl font-semibold text-gray-800 dark:text-white mb-1">
-              {project.title}
-            </h4>
-            <p className="text-gray-600 dark:text-gray-300 text-sm">
-              {project.desc}
-            </p> <br />
-            <div className='flex flex-col'>
-              <p className='font-bold'>Tools:<span className='text-[#2B7AB9]'> {project.tools}</span></p>
-            </div>
-          </a>
-        ))}
-      </div>
-    </div>
-
     {/* ✅ Completed & Maintained */}
-    <div>
+    <div className="mb-12">
       <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-6">
         -- Completed & Maintained --
       </h3>
@@ -78,6 +22,13 @@ export default function Projects() {
             link: "https://github.com/raphaeldahomay/10k-retriever",
             image: "/tenk_retriever.png",
             tools: "Python, Streamlit, SEC API",
+          },
+          {
+            title: "NumJam",
+            desc: "An arithmetic game where users have to solve operations as fast as possible.",
+            link: "https://numjam.onrender.com/",
+            image: "/numjam.png",
+            tools: "Python, JavaScript, HTML, CSS, Flask",
           },
           {
             title: "Geostock",
@@ -113,6 +64,62 @@ export default function Projects() {
             <p className="text-gray-600 dark:text-gray-300 text-sm">
               {project.desc}
             </p><br />
+            <div className='flex flex-col'>
+              <p className='font-bold'>Tools:<span className='text-[#2B7AB9]'> {project.tools}</span></p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>  
+
+    {/* 🛠️ In Development */}
+    <div className="mb-12">
+      <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-6">
+        -- In Development --
+      </h3>
+      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        {[
+          {
+            title: "Equilance",
+            desc: "A customizable multi-asset tracker built for users who want deeper insights into their portfolio performance, \
+            and more.",
+            link: "https://github.com/raphaeldahomay?tab=repositories",
+            image: "/in_development.png",
+            tools: "(Brainstorming phase)",
+          },
+          {
+            title: "PuppyLife",
+            desc: "A dog simulator web game built with Flask and JavaScript, featuring animated breeds and naming interactions.",
+            link: "https://github.com/raphaeldahomay?tab=repositories",
+            image: "/puppylife.png",
+            tools: "Python, Flask, JavaScript, HTML, CSS",
+          },
+          {
+            title: "CineClues",
+            desc: "Web game where users guess movie titles from riddles. Built with HTML/CSS/JS + TMDB API.",
+            link: "https://raphaeldahomay.github.io/rebus-quizz-app/",
+            image: "/cineclues.png",
+            tools: "HTML, CSS, Javascript",
+          }
+        ].map((project, index) => (
+          <a
+            key={index}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block p-4 rounded-2xl shadow-md bg-white dark:bg-gray-800 hover:shadow-xl transition-all border border-gray-200 dark:border-gray-700"
+          >
+            <img
+              src={`${basePath}${project.image}`}
+              alt={`${project.title} preview`}
+              className="w-full h-36 object-cover rounded-md mb-3"
+            />
+            <h4 className="text-xl font-semibold text-gray-800 dark:text-white mb-1">
+              {project.title}
+            </h4>
+            <p className="text-gray-600 dark:text-gray-300 text-sm">
+              {project.desc}
+            </p> <br />
             <div className='flex flex-col'>
               <p className='font-bold'>Tools:<span className='text-[#2B7AB9]'> {project.tools}</span></p>
             </div>
