@@ -18,20 +18,19 @@ export default function AboutMeSection() {
               className="w-40 h-40 rounded-lg object-cover mb-4 float-right ml-[8px]"
             />
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              Born and raised in the Caribbean, I had to leave in search of better opportunities—but I’ve never forgotten where I come from. <br /><br />
-              My journey took me from Canada to France, and now to Luxembourg. 
-              My father was a mathematician, and I believe he passed on to me his love for numbers. 
-              In 2021, I discovered the world of finance and was immediately drawn to it—
-              I loved how numbers shape decisions and strategies in this field. <br /><br />But over time, I felt the need to build and express my own ideas. 
-              That’s when coding came into my life at just the right moment. 
-              I wrote my first line of code less than two years ago, and even though I’m still early in my journey, 
-              my passion for computer science has helped me progress quickly. 
-              I believe in deep, consistent practice—and that’s what I’ve committed to ever since.
+              Born and raised in the Caribbean, I left in search of opportunities but never forgot my roots. <br /><br />
+              My path has taken me from Canada to Luxembourg and now back to France, shaping both my outlook and ambition. 
+              With a mathematician father, I inherited a love for numebrs that first drew me to finance in 2021, 
+              where I discovered how data shapes strategy and decisions. Soon after, I turned to coding as a way to create and bring ideas to life. <br /><br />
+              I wrote my first line of code less than two years ago, and while I remain endlessly curious,
+              I now plan to focus intensively on finance, data, and econometrics, with the goal of developing efficient, impactful software at 
+              the intersection of tech and finance. <br /><br />
             </p>
             <div className="flex justify-end">
             <a
-            href="/Raphael_Dahomay_CV.pdf"
-            download
+            href="/financial_resume_raphael_dahomay.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block relative group transition"
             >
                 <span className="relative z-10 text-[1.1rem] text-[#2B7AB9]">Download CV →</span>
