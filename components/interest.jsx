@@ -45,7 +45,8 @@ export default function Interest() {
             <div className="space-y-4">
               <h2 className="text-2xl font-bold">Curious about my research?</h2>
               <p className="text-gray-700 dark:text-gray-300">
-                Read one of my recent papers where I dive into a financial valuation case.
+              Read one of my recent papers where I perform a discounted cash flow (DCF) valuation of SoundHound, 
+              exploring its fundamentals to estimate a fair intrinsic value. 
               </p>
               <div className="flex">
               <a
@@ -54,7 +55,7 @@ export default function Interest() {
                 rel="noopener noreferrer"
                 className="inline-block group transition relative"
               >
-                <span className="relative z-10 text-[1.1rem] text-[#2B7AB9]">View Reseaech Paper →</span>
+                <span className="relative z-10 text-[1.1rem] text-[#2B7AB9]">View Research Paper →</span>
                 <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#2B7AB9] transition-all duration-500 group-hover:w-full"></span>
               </a>
               </div>

@@ -28,7 +28,7 @@ export default function AboutMeSection() {
             </p>
             <div className="flex justify-end">
             <a
-            href="/financial_resume_raphael_dahomay.pdf"
+            href="/my-portfolio/financial_resume_raphael_dahomay.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block relative group transition"

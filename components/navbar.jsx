@@ -22,12 +22,12 @@ export default function Navbar() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex gap-6">
-            <Link href="/#about" className="relative group text-[1.2rem] logo-text nav-link">
-                <span className="relative z-10">About Me</span>
-                <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#2B7AB9] transition-all duration-500 group-hover:w-full"></span>
-            </Link>
             <Link href="/#projects" className="relative group text-[1.2rem] logo-text nav-link">
                 <span className="relative z-10">Projects</span>
+                <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#2B7AB9] transition-all duration-500 group-hover:w-full"></span>
+            </Link>
+            <Link href="/#about" className="relative group text-[1.2rem] logo-text nav-link">
+                <span className="relative z-10">About Me</span>
                 <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#2B7AB9] transition-all duration-500 group-hover:w-full"></span>
             </Link>
             <Link href="/#interest" className="relative group text-[1.2rem] logo-text nav-link">
