@@ -20,7 +20,7 @@ export default function AboutMeSection() {
             <p className="text-gray-700 dark:text-gray-300 mb-4">
               Born and raised in the Caribbean, I left in search of opportunities but never forgot my roots. <br /><br />
               My path has taken me from Canada to Luxembourg and now back to France, shaping both my outlook and ambition. 
-              With a mathematician father, I inherited a love for numebrs that first drew me to finance in 2021, 
+              With a mathematician father, I inherited a love for numbers that first drew me to finance in 2021, 
               where I discovered how data shapes strategy and decisions. Soon after, I turned to coding as a way to create and bring ideas to life. <br /><br />
               I wrote my first line of code less than two years ago, and while I remain endlessly curious,
               I now plan to focus intensively on finance, data, and econometrics, with the goal of developing efficient, impactful software at 
